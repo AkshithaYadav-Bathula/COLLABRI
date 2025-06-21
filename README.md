@@ -46,9 +46,10 @@ Registers a new user.
   "email": "akshitha@example.com",
   "password": "secure987"
 }
+```
+##### 🔸 Successful Response (201) 
 
-🔸 Successful Response (201) 
-
+```json
 {
   "message": "User registered",
   "token": "<JWT_TOKEN>",
@@ -57,14 +58,16 @@ Registers a new user.
     "email": "akshitha@example.com"
   }
 }
+```
 
-🔸 Error: Email already registered (400)
-
+#####🔸 Error: Email already registered (400)
+```json
 {
   "error": "User already exists"
 }
+```
 
-POST /api/auth/login
+### 🔐  `POST /api/auth/login`
 Authenticates an existing user.
 
 🔸 Request Body
