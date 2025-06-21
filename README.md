@@ -59,9 +59,9 @@ Registers a new user.
   }
 }
 ```
-
-#####🔸 Error: Email already registered (400)
-```json
+ 
+🔸 Error: Email already registered (400)
+``` json
 {
   "error": "User already exists"
 }
@@ -71,12 +71,15 @@ Registers a new user.
 Authenticates an existing user.
 
 🔸 Request Body
+``` json
 {
   "email": "akshitha@example.com",
   "password": "secure987"
 }
+```
 
 🔸 Successful Response (200)
+``` json
 {
   "message": "Login successful",
   "token": "<JWT_TOKEN>",
@@ -85,21 +88,23 @@ Authenticates an existing user.
     "email": "akshitha@example.com"
   }
 }
+```
 
 
 🔸 Error: Invalid credentials (400)
-
+``` json
 {
   "error": "Invalid password"
 }
-
+```
 
 🔐 Environment Setup (.env)
 Create a .env file in the /backend directory with the following variables:
 
+``` json
 MONGO_URI=mongodb+srv://<username>:<password>@cluster0.mongodb.net/collabri?retryWrites=true&w=majority
 JWT_SECRET=collabriSuperKey123
-
+```
 
 ⚠️ Important: Do not commit your .env file to GitHub. Add it to .gitignore.
 
@@ -108,19 +113,30 @@ JWT_SECRET=collabriSuperKey123
 
 
 Navigate to the backend directory:
-cd backend
 
+``` json
+cd backend
+```
 
 Install dependencies:
+
+``` json
 npm install
+```
 
 
 Start the server:
+``` json
 npm run dev    # Uses nodemon (recommended)
+```
   or 
+``` json
 node index.js  # Basic start
+``` 
 
 
 Backend will run at:
+``` json
 http://localhost:5000
+```
 
