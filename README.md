@@ -136,7 +136,7 @@ node index.js  # Basic start
 
 
 Backend will run at:
-``` json
+``` bash
 http://localhost:5000
 ```
 
