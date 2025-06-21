@@ -1,4 +1,4 @@
-# 📚 COLLABRI – Collaborative Learning Platform (Backend)
+# 📚 COLLABRI – Collaborative Learning Platform 
 
 **Collabri** is the backend API for a full-stack **MERN** (MongoDB, Express.js, React.js, Node.js) application built to promote collaborative academic learning. This backend handles user authentication, database interactions, and secure communication between the client and server.
 
@@ -101,7 +101,7 @@ Authenticates an existing user.
 🔐 Environment Setup (.env)
 Create a .env file in the /backend directory with the following variables:
 
-``` json
+``` env
 MONGO_URI=mongodb+srv://<username>:<password>@cluster0.mongodb.net/collabri?retryWrites=true&w=majority
 JWT_SECRET=collabriSuperKey123
 ```
@@ -114,23 +114,23 @@ JWT_SECRET=collabriSuperKey123
 
 Navigate to the backend directory:
 
-``` json
+ ```bash
 cd backend
 ```
 
 Install dependencies:
 
-``` json
+ ```bash
 npm install
 ```
 
 
 Start the server:
-``` json
+ ```bash
 npm run dev    # Uses nodemon (recommended)
 ```
   or 
-``` json
+ ```bash
 node index.js  # Basic start
 ``` 
 
