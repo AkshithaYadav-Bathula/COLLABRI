@@ -161,7 +161,7 @@ export default function LandingPage() {
               <span className="text-xl font-bold">Collabri</span>
             </div>
             <p className="text-gray-400 text-sm">
-              © 2025 Collabri. Made with ❤️ for students, by students.
+              © 2025 Collabri. Made with ❤️ for students, by Akshitha.
             </p>
           </div>
         </div>
